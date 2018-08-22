@@ -5,7 +5,7 @@ package com.yhy.utils.core.common;
  * e-mail : yhyzgn@gmail.com
  * time   : 2018-08-21 9:06
  * version: 1.0.0
- * desc   :
+ * desc   : 字符串工具类
  */
 public class StringUtils {
 
