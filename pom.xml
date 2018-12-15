@@ -8,7 +8,7 @@
     <artifactId>utils-core</artifactId>
     <version>1.0.0</version>
     <name>UtilsCore</name>
-    <description>Some utils of development</description>
+    <description>Some utils of java developments.</description>
     <url>https://github.com/yhyzgn/UtilsCore</url>
 
     <properties>
