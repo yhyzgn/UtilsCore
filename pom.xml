@@ -6,7 +6,7 @@
 
     <groupId>com.yhyzgn.utils</groupId>
     <artifactId>utils-core</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.2</version>
     <name>UtilsCore</name>
     <description>Some utils of java developments.</description>
     <url>https://github.com/yhyzgn/UtilsCore</url>
@@ -110,7 +110,7 @@
                 <version>1.6.8</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <!-- 等于上面Settings中server的id值。-->
+                    <!-- 等于Maven settings中server的id值。-->
                     <serverId>oss</serverId>
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <autoReleaseAfterClose>true</autoReleaseAfterClose>

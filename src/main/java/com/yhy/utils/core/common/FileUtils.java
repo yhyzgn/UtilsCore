@@ -16,7 +16,14 @@ import java.util.Locale;
  * desc   : 文件工具类
  */
 public class FileUtils {
+    /**
+     * 16进制数组常量
+     */
+    private final static char[] HEX_CODE = "0123456789abcdef".toCharArray();
 
+    /**
+     * 禁用构造方法
+     */
     private FileUtils() {
         throw new UnsupportedOperationException("Util class can not be instantiate.");
     }
@@ -60,7 +67,7 @@ public class FileUtils {
      * @return 文件是否存在
      */
     public static boolean exists(File file, boolean gen) {
-        return null != file && (file.exists() || gen && file.mkdir());
+        return null != file && (file.exists() || gen && file.mkdirs());
     }
 
     /**
@@ -110,36 +117,27 @@ public class FileUtils {
      * @return 格式化后的文件大小
      */
     public static String formatSize(long size) {
-        if (size < 1024) {
-            return size + "B";
+        double result = size;
+        if (result < 1024) {
+            return String.format("%.2fB", result);
         }
-        size /= 1024;
-        if (size < 1024) {
-            return size + "KB";
+        result /= 1024;
+        if (result < 1024) {
+            return String.format("%.2fKB", result);
         }
-        size /= 1024;
-        if (size < 1024) {
-            return size + "KB";
+        result /= 1024;
+        if (result < 1024) {
+            return String.format("%.2fMB", result);
         }
-        size /= 1024;
-        // 从MB开始，就需要小数部分
-        if (size < 1024) {
-            size *= 100;
-            return (size / 100) + "." + (size % 100) + "MB";
+        result /= 1024;
+        if (result < 1024) {
+            return String.format("%.2fGB", result);
         }
-        size /= 1024;
-        if (size < 1024) {
-            size *= 100;
-            return (size / 100) + "." + (size % 100) + "GB";
+        result /= 1024;
+        if (result < 1024) {
+            return String.format("%.2fTB", result);
         }
-        size /= 1024;
-        if (size < 1024) {
-            size *= 100;
-            return (size / 100) + "." + (size % 100) + "TB";
-        }
-        size /= 1024;
-        size *= 100;
-        return (size / 100) + "." + (size % 100) + "PB";
+        return String.format("%.2fPB", result);
     }
 
     /**
@@ -307,7 +305,7 @@ public class FileUtils {
         BufferedInputStream bis = new BufferedInputStream(src);
         BufferedOutputStream bos = new BufferedOutputStream(dest);
         int len = 0;
-        byte[] buffer = new byte[12 * 1024];
+        byte[] buffer = new byte[20 * 1024];
         while ((len = bis.read(buffer)) != -1) {
             bos.write(buffer, 0, len);
         }
@@ -329,13 +327,12 @@ public class FileUtils {
         MessageDigest digest = MessageDigest.getInstance("MD5");
         BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file));
         int len = 0;
-        byte[] buffer = new byte[12 * 1024];
+        byte[] buffer = new byte[20 * 1024];
         while ((len = bis.read()) != -1) {
             digest.update(buffer, 0, len);
         }
         bis.close();
-        BigInteger bi = new BigInteger(1, digest.digest());
-        return bi.toString(16);
+        return hexString(digest.digest());
     }
 
     /**
@@ -495,6 +492,20 @@ public class FileUtils {
         Arrays.stream(dirs).forEach(dir -> {
             sb.append(File.separator).append(dir);
         });
+        return sb.toString();
+    }
+
+    /**
+     * 将字节数组转换为16进制字符串
+     *
+     * @param data 字节数组
+     * @return 16进制字符串
+     */
+    private static String hexString(byte[] data) {
+        StringBuilder sb = new StringBuilder(data.length * 2);
+        for (byte bt : data) {
+            sb.append(HEX_CODE[(bt >> 4) & 0xf]).append(HEX_CODE[bt & 0xf]);
+        }
         return sb.toString();
     }
 }

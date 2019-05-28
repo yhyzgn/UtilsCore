@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="970e5c8f-af15-4786-ade6-bddb030aa659" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/IOUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/yhy/utils/FileTester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/id/IdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/id/IdWorker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/FileUtils.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -15,116 +15,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/FileUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1087">
-              <caret line="488" column="7" lean-forward="true" selection-start-line="488" selection-start-column="7" selection-end-line="488" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="n#!!block;n#FileUtils#0;n#FileUtils#0" />
-                <element signature="e#493#494#0" expanded="true" />
-                <element signature="docComment;method#exists#0;class#FileUtils#0" />
-                <element signature="docComment;method#exists#1;class#FileUtils#0" />
-                <element signature="docComment;method#exists#2;class#FileUtils#0" />
-                <element signature="docComment;method#exists#3;class#FileUtils#0" />
-                <element signature="docComment;method#size#0;class#FileUtils#0" />
-                <element signature="n#!!block;n#length#0;n#FileUtils#0" />
-                <element signature="e#1538#1539#0" expanded="true" />
-                <element signature="docComment;method#size#1;class#FileUtils#0" />
-                <element signature="docComment;method#sizeFormatted#0;class#FileUtils#0" />
-                <element signature="n#!!block;n#sizeFormatted#0;n#FileUtils#0" />
-                <element signature="e#1933#1934#0" expanded="true" />
-                <element signature="docComment;method#sizeFormatted#1;class#FileUtils#0" />
-                <element signature="docComment;method#formatSize#0;class#FileUtils#0" />
-                <element signature="method#formatSize#0;class#FileUtils#0" />
-                <element signature="docComment;method#delete#0;class#FileUtils#0" />
-                <element signature="docComment;method#delete#1;class#FileUtils#0" />
-                <element signature="method#delete#1;class#FileUtils#0" />
-                <element signature="docComment;method#copy#0;class#FileUtils#0" />
-                <element signature="method#copy#0;class#FileUtils#0" />
-                <element signature="docComment;method#copy#1;class#FileUtils#0" />
-                <element signature="method#copy#1;class#FileUtils#0" />
-                <element signature="docComment;method#copy#1;class#FileUtils#0" />
-                <element signature="method#copy#1;class#FileUtils#0" />
-                <element signature="docComment;method#copy#2;class#FileUtils#0" />
-                <element signature="method#copy#2;class#FileUtils#0" />
-                <element signature="docComment;method#copy#2;class#FileUtils#0" />
-                <element signature="method#copy#2;class#FileUtils#0" />
-                <element signature="docComment;method#copy#3;class#FileUtils#0" />
-                <element signature="method#copy#3;class#FileUtils#0" />
-                <element signature="docComment;method#copy#4;class#FileUtils#0" />
-                <element signature="method#copy#3;class#FileUtils#0" />
-                <element signature="docComment;method#copy#5;class#FileUtils#0" />
-                <element signature="method#copy#5;class#FileUtils#0" />
-                <element signature="docComment;method#copy#4;class#FileUtils#0" />
-                <element signature="method#copy#4;class#FileUtils#0" />
-                <element signature="docComment;method#copy#5;class#FileUtils#0" />
-                <element signature="method#copy#5;class#FileUtils#0" />
-                <element signature="docComment;method#md5#0;class#FileUtils#0" />
-                <element signature="method#md5#0;class#FileUtils#0" />
-                <element signature="docComment;method#suffix#0;class#FileUtils#0" />
-                <element signature="n#!!block;n#suffix#0;n#FileUtils#0" />
-                <element signature="e#7925#7926#0" expanded="true" />
-                <element signature="docComment;method#suffix#0;class#FileUtils#0" />
-                <element signature="method#suffix#0;class#FileUtils#0" />
-                <element signature="docComment;method#temp#0;class#FileUtils#0" />
-                <element signature="docComment;method#dest#0;class#FileUtils#0" />
-                <element signature="docComment;method#tempDaily#0;class#FileUtils#0" />
-                <element signature="docComment;method#destDaily#0;class#FileUtils#0" />
-                <element signature="docComment;method#dir#0;class#FileUtils#0" />
-                <element signature="method#dir#0;class#FileUtils#0" />
-                <element signature="docComment;method#dailyDir#0;class#FileUtils#0" />
-                <element signature="method#dailyDir#0;class#FileUtils#0" />
-                <element signature="docComment;method#dailyDir#1;class#FileUtils#0" />
-                <element signature="method#dailyDir#1;class#FileUtils#0" />
-                <element signature="docComment;method#dailyPath#0;class#FileUtils#0" />
-                <element signature="docComment;method#formatPath#0;class#FileUtils#0" />
-                <element signature="docComment;method#dirs#0;class#FileUtils#0" />
-                <element signature="method#dirs#0;class#FileUtils#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/IOUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#349#350#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/StringUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="12" column="78" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -132,6 +30,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>nexus-staging-maven-plugin</find>
+      <find>mkdir</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -142,21 +46,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/id/IdWorder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/StringUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/reflect/ClassUtils.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/id/IdWorker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/IOUtils.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/yhy/utils/FileTester.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/FileUtils.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
   <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="localRepository" value="D:\Files\Library\maven3\repository" />
-        <option name="mavenHome" value="$PROJECT_DIR$/../../../../Library/maven3" />
-        <option name="userSettingsFile" value="D:\Files\Library\maven3\conf\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
     <option name="importingSettings">
       <MavenImportingSettings>
         <option name="importAutomatically" value="true" />
@@ -165,12 +66,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="UtilsCore" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -250,7 +146,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -324,12 +219,43 @@
               <item name="yhy" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="id" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UtilsCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UtilsCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UtilsCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UtilsCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UtilsCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UtilsCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UtilsCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UtilsCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="yhy" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -340,10 +266,16 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.35517243" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -356,6 +288,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="FileTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.yhy.utils.FileTester" />
+      <module name="utils-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yhy.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FileTester" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -380,18 +332,18 @@
       <workItem from="1544674187801" duration="1754000" />
       <workItem from="1544683259573" duration="4003000" />
       <workItem from="1544842393276" duration="20000" />
-      <workItem from="1558939118174" duration="11264000" />
+      <workItem from="1558939118174" duration="11375000" />
+      <workItem from="1559026274049" duration="7077000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31905000" />
+    <option name="totallyTimeSpent" value="39093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="23" width="2560" height="1417" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15103339" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15222576" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -399,15 +351,17 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="JRebel" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Problems" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32930514" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39954683" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3275488" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.54531723" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -422,7 +376,7 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.16044776" />
-      <window_info anchor="right" id="Maven" order="9" weight="0.22337043" />
+      <window_info anchor="right" id="Maven" order="9" visible="true" weight="0.22337043" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18550107" />
@@ -473,31 +427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="43" column="16" lean-forward="true" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yhy/utils/core/id/IdWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/StringUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="12" column="78" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/IOUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#349#350#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -576,80 +505,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yhy/utils/core/id/IdWorker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="398">
+          <caret line="147" column="43" lean-forward="true" selection-start-line="147" selection-start-column="43" selection-end-line="147" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/IOUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#256#257#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/StringUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/yhy/utils/FileTester.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1087">
-          <caret line="488" column="7" lean-forward="true" selection-start-line="488" selection-start-column="7" selection-end-line="488" selection-end-column="7" />
+        <state relative-caret-position="316">
+          <caret line="146" column="7" selection-start-line="146" selection-start-column="7" selection-end-line="146" selection-end-column="7" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="n#!!block;n#FileUtils#0;n#FileUtils#0" />
-            <element signature="e#493#494#0" expanded="true" />
+            <element signature="docComment;class#FileUtils#0" />
+            <element signature="docComment;field#HEX_CODE#0;class#FileUtils#0" />
+            <element signature="docComment;method#FileUtils#0;class#FileUtils#0" />
             <element signature="docComment;method#exists#0;class#FileUtils#0" />
             <element signature="docComment;method#exists#1;class#FileUtils#0" />
             <element signature="docComment;method#exists#2;class#FileUtils#0" />
             <element signature="docComment;method#exists#3;class#FileUtils#0" />
             <element signature="docComment;method#size#0;class#FileUtils#0" />
-            <element signature="n#!!block;n#length#0;n#FileUtils#0" />
-            <element signature="e#1538#1539#0" expanded="true" />
             <element signature="docComment;method#size#1;class#FileUtils#0" />
             <element signature="docComment;method#sizeFormatted#0;class#FileUtils#0" />
-            <element signature="n#!!block;n#sizeFormatted#0;n#FileUtils#0" />
-            <element signature="e#1933#1934#0" expanded="true" />
             <element signature="docComment;method#sizeFormatted#1;class#FileUtils#0" />
             <element signature="docComment;method#formatSize#0;class#FileUtils#0" />
             <element signature="method#formatSize#0;class#FileUtils#0" />
+            <element signature="e#2284#2326#1" />
+            <element signature="e#2374#2417#1" />
+            <element signature="e#2571#2773#1" />
+            <element signature="e#2726#2823#1" />
+            <element signature="e#2871#2968#1" />
             <element signature="docComment;method#delete#0;class#FileUtils#0" />
             <element signature="docComment;method#delete#1;class#FileUtils#0" />
             <element signature="method#delete#1;class#FileUtils#0" />
+            <element signature="e#3386#3417#1" />
+            <element signature="e#3445#3503#1" />
+            <element signature="e#3592#3691#1" />
+            <element signature="e#3633#3681#1" />
             <element signature="docComment;method#copy#0;class#FileUtils#0" />
             <element signature="method#copy#0;class#FileUtils#0" />
             <element signature="docComment;method#copy#1;class#FileUtils#0" />
             <element signature="method#copy#1;class#FileUtils#0" />
-            <element signature="docComment;method#copy#1;class#FileUtils#0" />
-            <element signature="method#copy#1;class#FileUtils#0" />
-            <element signature="docComment;method#copy#2;class#FileUtils#0" />
-            <element signature="method#copy#2;class#FileUtils#0" />
             <element signature="docComment;method#copy#2;class#FileUtils#0" />
             <element signature="method#copy#2;class#FileUtils#0" />
             <element signature="docComment;method#copy#3;class#FileUtils#0" />
             <element signature="method#copy#3;class#FileUtils#0" />
             <element signature="docComment;method#copy#4;class#FileUtils#0" />
-            <element signature="method#copy#3;class#FileUtils#0" />
-            <element signature="docComment;method#copy#5;class#FileUtils#0" />
-            <element signature="method#copy#5;class#FileUtils#0" />
-            <element signature="docComment;method#copy#4;class#FileUtils#0" />
             <element signature="method#copy#4;class#FileUtils#0" />
             <element signature="docComment;method#copy#5;class#FileUtils#0" />
             <element signature="method#copy#5;class#FileUtils#0" />
+            <element signature="e#5360#5391#1" />
+            <element signature="docComment;method#copy#6;class#FileUtils#0" />
+            <element signature="method#copy#6;class#FileUtils#0" />
+            <element signature="docComment;method#copy#7;class#FileUtils#0" />
+            <element signature="method#copy#7;class#FileUtils#0" />
+            <element signature="e#6003#6034#1" />
+            <element signature="docComment;method#copy#8;class#FileUtils#0" />
+            <element signature="method#copy#8;class#FileUtils#0" />
+            <element signature="e#6336#6367#1" />
+            <element signature="docComment;method#copy#9;class#FileUtils#0" />
+            <element signature="method#copy#9;class#FileUtils#0" />
+            <element signature="e#6665#6696#1" />
+            <element signature="e#6941#6991#1" />
             <element signature="docComment;method#md5#0;class#FileUtils#0" />
             <element signature="method#md5#0;class#FileUtils#0" />
+            <element signature="e#7260#7296#1" />
+            <element signature="e#7555#7609#1" />
             <element signature="docComment;method#suffix#0;class#FileUtils#0" />
-            <element signature="n#!!block;n#suffix#0;n#FileUtils#0" />
-            <element signature="e#7925#7926#0" expanded="true" />
-            <element signature="docComment;method#suffix#0;class#FileUtils#0" />
-            <element signature="method#suffix#0;class#FileUtils#0" />
+            <element signature="docComment;method#suffix#1;class#FileUtils#0" />
+            <element signature="method#suffix#1;class#FileUtils#0" />
+            <element signature="e#8091#8127#1" />
+            <element signature="e#8206#8242#1" />
+            <element signature="e#8343#8379#1" />
             <element signature="docComment;method#temp#0;class#FileUtils#0" />
             <element signature="docComment;method#dest#0;class#FileUtils#0" />
             <element signature="docComment;method#tempDaily#0;class#FileUtils#0" />
             <element signature="docComment;method#destDaily#0;class#FileUtils#0" />
             <element signature="docComment;method#dir#0;class#FileUtils#0" />
             <element signature="method#dir#0;class#FileUtils#0" />
+            <element signature="e#10025#10071#1" />
             <element signature="docComment;method#dailyDir#0;class#FileUtils#0" />
             <element signature="method#dailyDir#0;class#FileUtils#0" />
+            <element signature="e#10446#10511#1" />
             <element signature="docComment;method#dailyDir#1;class#FileUtils#0" />
             <element signature="method#dailyDir#1;class#FileUtils#0" />
+            <element signature="e#10809#10855#1" />
             <element signature="docComment;method#dailyPath#0;class#FileUtils#0" />
             <element signature="docComment;method#formatPath#0;class#FileUtils#0" />
             <element signature="docComment;method#dirs#0;class#FileUtils#0" />
             <element signature="method#dirs#0;class#FileUtils#0" />
+            <element signature="e#11686#11720#1" />
+            <element signature="e#11805#11874#0" />
+            <element signature="docComment;method#hexString#0;class#FileUtils#0" />
+            <element signature="method#hexString#0;class#FileUtils#0" />
+            <element signature="e#12011#12099#1" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -662,7 +648,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.35517243" />
               </list>
             </option>
           </splitter-proportions>
@@ -674,7 +660,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.35517243" />
               </list>
             </option>
           </splitter-proportions>
@@ -705,7 +691,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>UtilsCore</last-edited>
+          <last-edited>utils-core</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -733,7 +719,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.35517243" />
               </list>
             </option>
           </splitter-proportions>
