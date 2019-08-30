@@ -19,6 +19,11 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
 
+    <issueManagement>
+        <system>Github Issue</system>
+        <url>https://github.com/yhyzgn/UtilsCore/issues</url>
+    </issueManagement>
+
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
