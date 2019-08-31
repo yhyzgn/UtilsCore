@@ -4,7 +4,7 @@
 
     <groupId>com.yhyzgn.utils</groupId>
     <artifactId>utils-core</artifactId>
-    <version>1.1.0</version>
+    <version>1.1.1-SNAPSHOT</version>
     <!-- <version>1.1.0</version> -->
     <name>UtilsCore</name>
     <description>Some utils of java developments.</description>
@@ -43,7 +43,7 @@
         <url>https://github.com/yhyzgn/UtilsCore</url>
         <connection>scm:git:https://github.com/yhyzgn/UtilsCore</connection>
         <developerConnection>scm:git:https://github.com/yhyzgn/UtilsCore</developerConnection>
-      <tag>v1.1.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <distributionManagement>
