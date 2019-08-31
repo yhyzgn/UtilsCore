@@ -6,7 +6,7 @@
 
     <groupId>com.yhyzgn.utils</groupId>
     <artifactId>utils-core</artifactId>
-    <version>1.0.6</version>
+    <version>1.1.0</version>
     <name>UtilsCore</name>
     <description>Some utils of java developments.</description>
     <url>https://github.com/yhyzgn/UtilsCore</url>
@@ -140,6 +140,16 @@
                 </executions>
             </plugin>
 
+            <!-- github上release -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
