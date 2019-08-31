@@ -141,7 +141,7 @@
             </plugin>
 
             <!-- 以上是方式一(直接发布上传)的配置，上传命令：mvn clean deploy -Dmaven.test.skip=true -e -->
-            <!-- 以下是方式二(github发布上传)的配置，上传命令：mvn release:prepare release:perform -->
+            <!-- 以下是方式二(github发布上传)的配置，上传命令：mvn clean release:prepare release:perform -->
 
             <!-- github上release -->
             <plugin>
