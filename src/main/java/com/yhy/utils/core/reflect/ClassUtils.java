@@ -28,19 +28,43 @@ public class ClassUtils {
     private static final String CLASS_SUFFIX = ".class";
     private static final String PACKAGE_SEPARATOR = ".";
 
+    /**
+     * 禁用构造方法
+     */
     private ClassUtils() {
         throw new UnsupportedOperationException("Can not instantiate utils class");
     }
 
+    /**
+     * 该类是否被某个注解注解
+     *
+     * @param clazz      类
+     * @param annotation 注解
+     * @return 是否被注解
+     */
     public static boolean isAnnotated(Class<?> clazz, Class<? extends Annotation> annotation) {
         return null != clazz && null != annotation && null != clazz.getAnnotation(annotation);
     }
 
+    /**
+     * 获取包下的所有类
+     *
+     * @param pkg         包
+     * @param annotations 注解
+     * @return 类
+     */
     @SafeVarargs
     public static List<Class<?>> getClassList(Package pkg, Class<? extends Annotation>... annotations) {
         return getClassList(pkg.getName(), annotations);
     }
 
+    /**
+     * 获取包下的所有类
+     *
+     * @param packageName 包
+     * @param annotations 注解
+     * @return 类
+     */
     @SafeVarargs
     public static List<Class<?>> getClassList(String packageName, Class<? extends Annotation>... annotations) {
         List<Class<?>> classList = new ArrayList<>();
@@ -73,6 +97,13 @@ public class ClassUtils {
         return getClassList(classList, annotations);
     }
 
+    /**
+     * 获取被注解的类
+     *
+     * @param classList   所有类
+     * @param annotations 注解
+     * @return 被注解的类
+     */
     @SafeVarargs
     public static List<Class<?>> getClassList(List<Class<?>> classList, Class<? extends Annotation>... annotations) {
         List<Class<?>> temp = new ArrayList<>(classList);
@@ -102,6 +133,13 @@ public class ClassUtils {
         return classList;
     }
 
+    /**
+     * 加载包内的类
+     *
+     * @param packageName 包
+     * @param dirPath     包对应的目录
+     * @param classList   类
+     */
     private static void loadClassListInPackage(String packageName, String dirPath, List<Class<?>> classList) {
         File dir = new File(dirPath);
         if (!dir.exists() || !dir.isDirectory()) {
@@ -128,6 +166,14 @@ public class ClassUtils {
         }
     }
 
+    /**
+     * 加载jar包中的类
+     *
+     * @param packageName 包名
+     * @param packagePath 包路径
+     * @param url         jar路径
+     * @param classList   类
+     */
     private static void loadClassListInJar(String packageName, String packagePath, URL url, List<Class<?>> classList) {
         JarFile jar;
         try {
