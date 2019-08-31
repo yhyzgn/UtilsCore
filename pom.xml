@@ -43,8 +43,8 @@
         <url>https://github.com/yhyzgn/UtilsCore</url>
         <connection>scm:git:https://github.com/yhyzgn/UtilsCore</connection>
         <developerConnection>scm:git:https://github.com/yhyzgn/UtilsCore</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <distributionManagement>
         <snapshotRepository>
@@ -139,6 +139,9 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <!-- 以上是方式一(直接发布上传)的配置，上传命令：mvn clean deploy -Dmaven.test.skip=true -e -->
+            <!-- 以下是方式二(github发布上传)的配置，上传命令：mvn release:prepare release:perform -->
 
             <!-- github上release -->
             <plugin>
