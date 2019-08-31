@@ -24,12 +24,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>nexus-staging-maven-plugin</find>
-      <find>mkdir</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -192,7 +186,7 @@
       <workItem from="1559026274049" duration="7077000" />
       <workItem from="1567127470362" duration="7754000" />
       <workItem from="1567233073930" duration="2591000" />
-      <workItem from="1567266682546" duration="450000" />
+      <workItem from="1567266682546" duration="3392000" />
     </task>
     <servers />
   </component>
