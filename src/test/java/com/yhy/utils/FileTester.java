@@ -1,10 +1,8 @@
 package com.yhy.utils;
 
 import com.yhy.utils.core.common.FileUtils;
-import com.yhy.utils.core.id.IdWorker;
 
 import java.io.File;
-import java.io.IOException;
 
 /**
  * author : 颜洪毅
