@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="970e5c8f-af15-4786-ade6-bddb030aa659" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/RandUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/common/RegexUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/thread/ThreadWire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yhy/utils/IDTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/yhy/utils/RandTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/id/IdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yhy/utils/core/gen/IdWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/yhy/utils/FileTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yhy/utils/FileTester.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -226,7 +217,7 @@
       <workItem from="1544842393276" duration="20000" />
       <workItem from="1558939118174" duration="11375000" />
       <workItem from="1559026274049" duration="7077000" />
-      <workItem from="1567127470362" duration="7754000" />
+      <workItem from="1567127470362" duration="7902000" />
     </task>
     <servers />
   </component>
