@@ -308,6 +308,7 @@ public class FileUtils {
         byte[] buffer = new byte[20 * 1024];
         while ((len = bis.read(buffer)) != -1) {
             bos.write(buffer, 0, len);
+            bos.flush();
         }
         bis.close();
         bos.close();

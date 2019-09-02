@@ -11,13 +11,13 @@ import java.lang.ref.WeakReference;
  */
 public class ThreadWire<T> {
     // 弱引用的ThreadLocal
-    private final ThreadLocal<WeakReference<T>> local;
+    private WeakReference<ThreadLocal<T>> ref;
 
     /**
      * 无参数构造方法
      */
     public ThreadWire() {
-        local = new ThreadLocal<>();
+        ref = new WeakReference<>(new ThreadLocal<>());
     }
 
     /**
@@ -26,7 +26,7 @@ public class ThreadWire<T> {
      * @param t 初始值
      */
     public ThreadWire(T t) {
-        local = ThreadLocal.withInitial(() -> new WeakReference<T>(t));
+        ref = new WeakReference<>(ThreadLocal.withInitial(() -> t));
     }
 
     /**
@@ -35,11 +35,12 @@ public class ThreadWire<T> {
      * @param t 当前线程下的值
      */
     public void set(T t) {
-        WeakReference<T> reference = local.get();
-        if (null == reference) {
-            reference = new WeakReference<>(t);
+        ThreadLocal<T> local = ref.get();
+        if (null == local) {
+            local = new ThreadLocal<>();
         }
-        local.set(reference);
+        local.set(t);
+        ref = new WeakReference<>(local);
     }
 
     /**
@@ -48,14 +49,17 @@ public class ThreadWire<T> {
      * @return 当前线程下的值
      */
     public T get() {
-        WeakReference<T> reference = local.get();
-        return null != reference ? reference.get() : null;
+        ThreadLocal<T> local = ref.get();
+        return null != local ? local.get() : null;
     }
 
     /**
      * 移除资源
      */
     public void remove() {
-        local.remove();
+        ThreadLocal<T> local = ref.get();
+        if (null != local) {
+            local.remove();
+        }
     }
 }

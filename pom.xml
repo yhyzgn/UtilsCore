@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yhyzgn.utils</groupId>
     <artifactId>utils-core</artifactId>
-    <version>1.0.2</version>
+    <version>1.1.1-SNAPSHOT</version>
+    <!-- <version>1.1.0</version> -->
     <name>UtilsCore</name>
     <description>Some utils of java developments.</description>
     <url>https://github.com/yhyzgn/UtilsCore</url>
@@ -42,8 +41,9 @@
 
     <scm>
         <url>https://github.com/yhyzgn/UtilsCore</url>
-        <connection>https://github.com/yhyzgn/UtilsCore.git</connection>
-        <developerConnection>https://github.com/yhyzgn/UtilsCore</developerConnection>
+        <connection>scm:git:https://github.com/yhyzgn/UtilsCore</connection>
+        <developerConnection>scm:git:https://github.com/yhyzgn/UtilsCore</developerConnection>
+        <tag>HEAD</tag>
     </scm>
 
     <distributionManagement>
@@ -62,6 +62,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
                 <configuration>
                     <source>1.8</source>
                     <target>1.8</target>
@@ -71,6 +72,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.2</version>
                 <configuration>
                     <archive>
                         <addMavenDescriptor>false</addMavenDescriptor>
@@ -138,6 +140,28 @@
                 </executions>
             </plugin>
 
+            <!-- 以上是方式一(直接发布上传)的配置，上传命令：mvn clean deploy -Dmaven.test.skip=true -e -->
+            <!-- 以下是方式二(github发布上传)的配置，上传命令：mvn clean release:prepare release:perform -->
+
+            <!-- github上release -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-scm-plugin</artifactId>
+                <version>1.8.1</version>
+                <configuration>
+                    <connectionType>developerConnection</connectionType>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>

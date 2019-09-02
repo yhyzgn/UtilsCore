@@ -10,5 +10,8 @@
         <module name="UtilsCore" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="utils-core" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
